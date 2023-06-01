@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="utf-8">
+    <link rel="icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="./logo192.png">
+    <link rel="manifest" href="/Edumoon2.o/manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <title>EDUMOON</title>
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Slicebox - 3D Image Slider with Fallback">
+    <meta name="keywords" content="jquery, css3, 3d, webkit, fallback, slider, css3, 3d transforms, slices, rotate, box, automatic">
+    <meta name="author" content="Pedro Botelho for Codrops">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+   
+   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+  <script src="https://kit.fontawesome.com/eb3c934bad.js" crossorigin="anonymous"></script>
+    
+
+
+     
+
+
+    <style>
+    .joinbutton{
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .butn {
+        position: relative;
+        padding: 10px 50px;
+        margin: 10px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #292929;
+        background-color: 	#25D366;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 1s all ease-in-out;
+        overflow: hidden;
+    }
+    #bt {
+        position: relative;
+        padding: 10px 50px;
+        margin: 10px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #292929;
+        background-color: #404eed;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: 1s all ease-in-out;
+        overflow: hidden;
+    }
+
+    .butn::before {
+        position: absolute;
+        content: '';
+        width: 400px;
+        height: 400px;
+        background-color: #fff;
+        top: -370px;
+        left: -120px;
+        border-radius: 45%;
+        transition: 2s all ease-in-out;
+        animation: wave 10s infinite linear;
+    }
+
+    .butn::after {
+        position: absolute;
+        content: '';
+        width: 400px;
+        height: 400px;
+        background-color: #ececec80;
+        top: -360px;
+        left: -125px;
+        border-radius: 45%;
+        transition: 2s all ease-in-out;
+        animation: wave 9s infinite linear;
+    }
+
+    .butn span {
+        position: relative;
+        z-index: 1;
+       
+    }
+
+    .butn:hover {
+        color: #fff;
+    }
+    #bt:hover {
+        color: #fff;
+    }
+
+    .butn:hover::before {
+        top: -450px;
+    }
+
+    .butn:hover::after {
+        top: -440px;
+    }
+
+    @keyframes wave {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+        
+    }
+      .button1 {background-color: #0d9f16;} /* Green */
+      .button2 {background-color: #404eed;} /* Blue */
+
+      .navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: white;
+}
+.navbar {
+  /* width: 100%; */
+  background: #c5aa6a;
+  background: -webkit-linear-gradient( to right,black,#00093c, #2d0b00); /* For Safari 5.1 to 6.0 */
+  background: -moz-linear-gradient(to right,black,#00093c, #2d0b00); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,black,#00093c, #2d0b00); 
+  color: #fff;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+
+.but button {
+  /* padding: 8px 19px; */
+  color: white;
+  background-color:  #721227;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all ease-in-out 0s;
+}
+
+.navbar button:hover a {
+  color: #721227;
+}
+
+.navbar button:hover {
+
+  color: #721227;
+}
+
+.navbar a:hover {
+  color: #721227;
+}
+.but button:hover {
+			background-color: white;
+      color: #721227;
+			
+            transform:scale(1);
+    box-shadow:none;
+    cursor: pointer;
+		}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.navbar-toggler,.navbar button{
+  margin: 10px;
+}
+.navbar li a{
+  margin: 10px;
+}
+
+
+      </style>
+    <script type="text/javascript" src="modernizr.custom.46884.js">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script defer="defer" src="/Edumoon2.o/static/js/main.5b14f42c.js">
+    </script>
+    <link href="/static/css/main.b860d491.css" rel="stylesheet">
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <!-- Logo Image -->
+            <img src="EDumoonwhite logo.jpg" width="90" alt="" class="d-inline-block align-middle mr-2">
+            <!-- Logo Text -->
+          </a>
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clubs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+            <div class="but">
+              <a href="#"><button class="btn my-2 my-sm-0" type="submit">Download App</button></a>
+            </div>
+          </div>
+        </div>
+          
+  
+      </nav>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <div style="margin-top: 80px;">
+        <section id="hero" class="hero">
+            <div class="container position-relative">
+              <div class="row gy-5" data-aos="fade-in">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start" style="margin-top:-3px;">
+                 <div class="main-text"> <i><h1 class="text-center" >Largest Interactive Student Community</h1></i>
+                    <center><p>To UpSkill your Career with</p></center>
+                    <center><p>Experts and a Great Network</p></center>
+                    <center><p>Join Now</p></center>
+                </div>
+                 <div class="d-flex justify-content-center justify-content-lg-start">
+                  </div>
+                  <div>
+                    <div class="join-community">
+                        <div class="social-buttons">
+                            <a class="butn" href="https://chat.whatsapp.com/DndX5CJ8Yov4F3pj5VzxzX"target="_blank" style="text-decoration:none;">
+                                                                <span>Whatsapp</span>
+                                                            </a>
+                                                            <a class="butn" id="bt" target="_blank" href="https://discord.gg/2kA86Q8CnU" alt="discord icon">
+                                                               <span>Discord</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                 <div class="col-lg-6 order-1 order-lg-2" style="margin-top:-40px ;">
+                    <p></p>
+                  <img src="./images/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+                </div>
+              </div>
+            </div>
+            </div>
+          </section>
+            </div>
+        </div>
+    </div>
+                    <div>
+                        <div class="partners mb-5">
+                            <div class="container" style="margin-top:-10px;">
+                              <i><h1 class="text-center" style="text-align: center; color: black;  font-size:40px;font-family:'Times New Roman', Times, serif ;">TRUSTED BY</h1></i>
+                                </div><div style="margin-top:-25px;">
+                                    <center>
+                                    <img src="./images/au-big-logo.png" alt="Cinque Terre" width="110" height="110">
+                                    <img src="./images/stpi-removebg-preview.png" alt="Cinque Terre" width="140" height="110">
+                                    <img src="./images/msme-removebg-preview.png" alt="Cinque Terre" width="130" height="110">
+                                    <img src="./images/iso-removebg-preview.png" alt="Cinque Terre" width="130" height="110">
+                                    <img src="./images/3f6a55d5-d999-4523-bbeb-819ef1e045ec_3-removebg-preview (1).png" alt="Cinque Terre" width="130" height="140">
+                                    <img src="./images/pontaq-removebg-preview.png" alt="Cinque Terre" width="130" height="110">
+                                    <img src="./images/MIC_LOGO-2-removebg-preview.png" alt="Cinque Terre" width="200" height="110">
+                                     <img src="./images/Startup-India_Preview-3-removebg-preview.png" alt="Cinque Terre" width="150" height="130">
+                                    <img src="./images/picture-1-1536558121-removebg-preview.png" alt="Cinque Terre"width="120" height="120">                                                                                     
+                                </center>         
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features pt-4">
+                                    <div class="container" style="margin-top:-80px;">
+                                        <div class="row">
+                                            <div class="col" style="margin-bottom: -30px">
+                                            <div class=" text-center">
+                                                <i>  <h1 class="text-center" style="text-align: center; color: black; margin: 5% 5% 20px;font-size:40px;font-family:'Times New Roman', Times, serif;">OUR ACHIEVEMENTS</h1></i><br>
+                                                <div class="section_subtitle">
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="row features_row">
+                                                <div class="col-lg-4 feature_col">
+                                                    <div class="feature text-center trans_400">
+                                                        <div class="feature_icon">
+                                                            <img src="./images/icons_1.png" alt="">
+                                                        </div>
+                                                        <div class="milestone_counter pt-4" data-end-value="12000" data-sign-after="+">12,000+</div>
+                                                        <h3 class="feature_title">Students</h3>
+                                                        <div class="feature_text">
+                                                            <p style="font-style: normal;">Join our vibrant student community where 12,000+ individuals from all around globe come together to learn,share,grow.</p>
+                                                            <button style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                        <div class="col-lg-4 feature_col">
+                                                            <div class="feature text-center trans_400">
+                                                                <div class="feature_icon">
+                                                                    <img src="./images/icons_2.png" alt="">
+                                                                    </div>
+                                                                    <div class="milestone_counter pt-4" data-end-value="600" data-sign-after="+">600+</div>
+                                                                    <h3 class="feature_title">Internships</h3>
+                                                                    <div class="feature_text">
+                                                                        <p>Discover your dream internships with us and join the many happy students who have already found theirs through our vibrant community.
+
+                                                                        </p>
+                                                                        <button style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                    </div>
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 feature_col">
+                                                                            <div class="feature text-center trans_400">
+                                                                                <div class="feature_icon">
+                                                                                    <img src="./images/icons_3.png" alt="">
+                                                                                </div>
+                                                                                <div class="milestone_counter pt-4" data-end-value="30" data-sign-after="+">30+</div>
+                                                                                <h3 class="feature_title">COURSES</h3>
+                                                                                <div class="feature_text"><p>Get ahead of the curve with our curated courses, designed to help you achieve top marks, gain valuable skills and get ready for internships and job opportunities.</p>
+                                                                                    <button style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                    <div class="row features_row">
+                                                        <div class="col-lg-4 feature_col">
+                                                            <div class="dropdown">
+                                                            <div class="feature text-center trans_400">
+                                                                <div class="feature_icon">
+                                                                    <img src="./images/icons_4.png" alt="">
+                                                                    </div>
+                                                                    <div class="milestone_counter pt-4" data-end-value="50" data-sign-after="+">50+</div>
+                                                                    <h3 class="feature_title">Companies Collabrated</h3>
+                                                                    <div class="feature_text">
+                                                                        <p>Gain real-world insights, opportunities and expertise to grow with our community as we collaborate with 30+ companies to offer you the best.
+
+                                                                        </p>
+                                                                        <button style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                    </div>
+                                                                        </div>
+                                                                        <div class="dropdown-content">
+                                                                            <div>
+                                                                                <img src="./assets/img/clients/client-1.png" width="125" height="82" alt="Flying Bat">
+                                                                                <img src="./assets/img/clients/client-2.png" width="125" height="82" alt="Flying Bat">
+                                                                                <img src="./assets/img/clients/client-3.png" width="125" height="82" alt="Flying Bat">
+                                                                                <img src="./assets/img/clients/client-4.png" width="125" height="82" alt="Flying Bat">
+                                                                                <img src="./assets/img/clients/client-5.png" width="125" height="82" alt="Flying Bat">
+                                                                                <img src="./assets/img/clients/client-6.png" width="125" height="82" alt="Flying Bat">
+                                                                                <img src="./assets/img/clients/client-7.png" width="125" height="82" alt="Flying Bat">
+                                                                                <img src="./assets/img/clients/client-8.png" width="125" height="82" alt="Flying Bat">
+                                                                                <img src="./assets/img/clients/client-9.png" width="125" height="82" alt="Flying Bat">
+                                                                                <img src="./assets/img/clients/client-10.png" width="125" height="82" alt="Flying Bat"> </div>
+                                                                       </div>
+                                                                           
+                                                            </div>
+                                                        </div>
+                                                                        <div class="col-lg-4 feature_col">
+                                                                            <div class="dropdown">
+                                                                            <div class="feature text-center trans_400">
+                                                                                <div class="feature_icon">
+                                                                                    <img src="./images/icons_5.png" alt="">
+                                                                                </div>
+                                                                                <div class="milestone_counter pt-4" data-end-value="7" data-sign-after="+">7+</div>
+                                                                                <h3 class="feature_title">Clubs</h3>
+                                                                                <div class="feature_text"><p>Unleash your potential and discover new horizons with our 7 clubs, designed to help you grow in various aspects of life during your studies. Join now!
+
+                                                                                </p>
+                                                                                    <button style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                 
+                                                                                </div>
+                                                                    </div>
+                                                                    <div class="dropdown-content" style="left:-250px;">
+                                                                        <div>
+                                                                            <img src="./images/clublogos/1.png" alt="" width="120" height="120">
+                                                                            <img src="./images/clublogos/2.png" alt="2" width="120" height="120">
+                                                                            <img src="./images/clublogos/3.png" alt="" width="120" height="120">
+                                                                            <img src="./images/clublogos/4.png" alt="" width="120" height="120">
+                                                                            <img src="./images/clublogos/5.png" alt="" width="120" height="120">
+                                                                            <img src="./images/clublogos/6.png" alt="" width="120" height="120">
+                                                                            <img src="./images/clublogos/7.png" alt="" width="120" height="120">
+                                                                             </div>
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 feature_col">
+                                                                    <div class="dropdown">
+                                                                    <div class="feature text-center trans_400">
+                                                                        <div class="feature_icon">
+                                                                            <img src="./images/icons_6.png" alt="">
+                                                                        </div>
+                                                                        <div class="milestone_counter pt-4" data-end-value="100" data-sign-after="+">15+</div>
+                                                                        <h3 class="feature_title">Colleges</h3>
+                                                                        <div class="feature_text">
+                                                                            <p style="font-style: normal;">Experience the power of collaboration with our inter-university events, designed for students to learn, develop skills, find like-minded individuals from different universities.</p>
+                                                                            <button style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="dropdown-content" style="right:5px">
+                                                                        <div>
+                                                                            <img src="./images/clglogos/Screenshot 2022-08-06 at 1.16.01 PM.png" alt="" width="125" height="120">
+                                                                            <img src="./images/clglogos/Screenshot 2023-03-27 at 6.50.17 PM.png" alt="2" width="125" height="120">
+                                                                            <img src="./images/clglogos/Screenshot 2023-03-27 at 6.50.24 PM.png" alt="" width="125" height="125">
+                                                                            <img src="./images/clglogos/Screenshot 2023-03-27 at 6.50.40 PM.png" alt="" width="125" height="125">
+                                                                            <img src="./images/clglogos/Screenshot 2023-03-27 at 6.50.32 PM.png" alt="" width="125" height="125">
+                                                                            <img src="./images/clglogos/Screenshot 2023-03-27 at 6.50.53 PM.png" alt="" width="125" height="82">
+                                                                            <img src="./images/clglogos/Screenshot 2023-03-27 at 6.51.05 PM.png" alt="" width="125" height="125">
+                                                                            <img src="./images/clglogos/Screenshot 2023-03-27 at 6.51.13 PM.png" alt="" width="125" height="125">
+                                                                            <img src="./images/clglogos/Screenshot 2023-03-27 at 6.51.21 PM.png" alt="" width="125" height="125">
+                                                                            <img src="./images/clglogos/Screenshot 2023-03-27 at 6.51.29 PM.png" alt="" width="125" height="125"> 
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                   <div>
+                                                    <i><h1 style="text-align: center; color: black; margin: 5% 5% 20px;font-family:'Times New Roman', Times, serif;">ARTICLES</h1></i>
+                                                   
+                                                    <section class="pt-3 pb-3">
+                                                        <div class="container">
+                                                          <div class="row" id="row1">
+                                                              <div class="col-6">
+                                                                 
+                                                              </div>
+                                                              <div class="col-6 text-right">
+                                                                  <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                                                      <i class="fa fa-arrow-left"></i>
+                                                                  </a>
+                                                                  <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                                                      <i class="fa fa-arrow-right"></i>
+                                                                  </a>
+                                                              </div>
+                                                              <div class="col-12">
+                                                                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" height="361px">
+                                                      
+                                                                      <div class="carousel-inner">
+                                                                          <div class="carousel-item active">
+                                                                              <div class="row" >
+                                                      
+                                                                                  <div class="col-md-4 mb-3">
+                                                                                      <div class="card">
+                                                                                        <div class="flip-card-inner">
+                                                                                        <div class="flip-card-front">
+                                                                                          <img class="img-fluid" alt="100%x280" src="./images/timesofindia.png">
+                                                                                        </div>
+                                                                                        <div class="flip-card-back">
+                                                                                          <div class="card-body">
+                                                                                              
+                                                                                              <h4><p class="card-text" style="padding-top:40px;">How AU students startup help others to start a startup.</p></h4>
+                                                                                              <button onclick="window.location.href='https://timesofindia.indiatimes.com/home/education/news/how-au-students-startup-helps-other-to-start-a-startup/articleshow/89042737.cms'" style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="col-md-4 mb-3">
+                                                                                      <div class="card">
+                                                                                        <div class="flip-card-inner">
+                                                                                            <div class="flip-card-front">
+                                                                                              <img class="img-fluid" alt="100%x280" src="./images/andhrajyothi.jpg">
+                                                                                            </div>
+                                                                                            <div class="flip-card-back">
+                                                                                              <div class="card-body">
+                                                                                                  
+                                                                                                  <h4><p class="card-text" style="padding-top:40px;">Edumoon in Top 90 for TiE University Global Pitch Competition.</p></h4>
+                                                                                                  <button onclick="window.location.href='https://epaper.andhrajyothy.com/Home/FullPage?eid=7&edate=15/04/2022&pgid=115805'" style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="col-md-4 mb-3">
+                                                                                      <div class="card">
+                                                                                        <div class="flip-card-inner">
+                                                                                            <div class="flip-card-front">
+                                                                                              <img class="img-fluid" alt="100%x280" src="./images/hellovizag.jpg">
+                                                                                            </div>
+                                                                                            <div class="flip-card-back">
+                                                                                              <div class="card-body">
+                                                                                                  
+                                                                                                  <h4><p class="card-text" style="padding-top:30px;">Vizag based startup,Edumoon selected for TiE University Global Pitch Competition.</p></h4>
+                                                                                                  <button onclick="window.location.href='https://news.hellovizag.in/vizag-based-startup-edumoon-selected-for-tie-university-global-pitch-competition'" style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              </div>
+                                                                              <div class="carousel-item">
+                                                                                <div class="row">
+                                                        
+                                                                                    <div class="col-md-4 mb-3">
+                                                                                        <div class="card">
+                                                                                          <div class="flip-card-inner">
+                                                                                          <div class="flip-card-front">
+                                                                                            <img class="img-fluid" alt="100%x280" src="./images/andhrajyothi.jpg">
+                                                                                          </div>
+                                                                                          <div class="flip-card-back">
+                                                                                            <div class="card-body">
+                                                                                                
+                                                                                                <h4><p class="card-text" style="padding-top:40px;">How AU students startup help others to start a startup.</p></h4>
+                                                                                                <button onclick="window.location.href='https://timesofindia.indiatimes.com/home/education/news/how-au-students-startup-helps-other-to-start-a-startup/articleshow/89042737.cms'" style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-4 mb-3">
+                                                                                        <div class="card">
+                                                                                          <div class="flip-card-inner">
+                                                                                              <div class="flip-card-front">
+                                                                                                <img class="img-fluid" alt="100%x280" src="./images/timesofindia.png">
+                                                                                              </div>
+                                                                                              <div class="flip-card-back">
+                                                                                                <div class="card-body">
+                                                                                                    
+                                                                                                    <h4><p class="card-text" style="padding-top:40px;">Edumoon in Top 90 for TiE University Global Pitch Competition.</p></h4>
+                                                                                                    <button onclick="window.location.href='https://epaper.andhrajyothy.com/Home/FullPage?eid=7&edate=15/04/2022&pgid=115805'" style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-4 mb-3">
+                                                                                        <div class="card">
+                                                                                          <div class="flip-card-inner">
+                                                                                              <div class="flip-card-front">
+                                                                                                <img class="img-fluid" alt="100%x280" src="./images/hellovizag.jpg">
+                                                                                              </div>
+                                                                                              <div class="flip-card-back">
+                                                                                                <div class="card-body">
+                                                                                                    
+                                                                                                    <h4><p class="card-text" style="padding-top:30px;">Vizag based startup,Edumoon selected for TiE University Global Pitch Competition.</p></h4>
+                                                                                                    <button onclick="window.location.href='https://news.hellovizag.in/vizag-based-startup-edumoon-selected-for-tie-university-global-pitch-competition'" style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                </div>
+                                                                                  <div class="carousel-item">
+                                                                                    <div class="row">
+                                                            
+                                                                              
+                                                      
+                                                                                  <div class="col-md-4 mb-3">
+                                                                                      <div class="card">
+                                                                                        <div class="flip-card-inner">
+                                                                                            <div class="flip-card-front">
+                                                                                              <img class="img-fluid" alt="100%x280" src="./images/the hindu.png">
+                                                                                            </div>
+                                                                                            <div class="flip-card-back">
+                                                                                              <div class="card-body">
+                                                                                                  
+                                                                                                  <h4><p class="card-text" style="padding-top:40px;">Andhra University duo’s ed-tech startup valued at Rs 3 crore.</p></h4>
+                                                                                                  <button onclick="window.location.href='https://m.timesofindia.com/city/visakhapatnam/au-duos-ed-tech-startup-valued-at-3-crore/articleshow/91222803.cms'" style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                          
+                                                                                              </div>
+                                                                                            </div>
+                                                                                            </div>
+                                                      
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="col-md-4 mb-3">
+                                                                                      <div class="card">
+                                                                                        <div class="flip-card-inner">
+                                                                                            <div class="flip-card-front">
+                                                                                              <img class="img-fluid" alt="100%x280" src="./images/timesofindia.png">
+                                                                                            </div>
+                                                                                            <div class="flip-card-back">
+                                                                                              <div class="card-body">
+                                                                                                  
+                                                                                                  <h4><p class="card-text" style="padding-top:35px;">Startup from AU selected for TiE University Global Pitch Competition.</p></h4>
+                                                                                                  <button onclick="window.location.href='https://www.thehindu.com/news/cities/Visakhapatnam/visakhapatnam-startup-from-andhra-university-selected-for-tie-university-global-pitch-competition/article65312064.ece'" style="color:#14bdee;padding:10px;border: none;background: none;">Read more...</button>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="col-md-4 mb-3">
+                                                                                      <div class="card">
+                                                                                        <div class="flip-card-inner">
+                                                                                            <div class="flip-card-front">
+                                                                                              <img class="img-fluid" alt="100%x280" src="./images/hellovizag.jpg">
+                                                                                            </div>
+                                                                                            <div class="flip-card-back">
+                                                                                              <div class="card-body">
+                                                                            
+                                                                                                  <h4><p class="card-text" style="padding-top:40px;">Ed tech startup by AU students values at 3 crores Rupees</p></h4>
+                                                                                                  <button onclick="window.location.href='https://news.hellovizag.in/ed-tech-startup-by-au-students-valued-at-3-crores'" style="color:#14bdee;padding:10px;border: none;background: none;" >Read more...</button>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                     </div>
+                                                                                  </div>
+                                                      
+                                                                              </div>
+                                                                          </div>
+                                                                          
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      </section>
+                                                     
+                                                    <div class="poc">
+                                                        <h1 style="text-align: center; color: #14bdee; margin: 0% 0% 20px;">POPULAR ONLINE COURSES</h1>
+                                                        <h5 style="font-family: normal;">Expert team teaches all the popular courses like Web development, App development and EAMCET</h5>
+                                                        <div id="cards_landscape_wrap-2">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                                        <a href="#/dbms">
+                                                                            <div class="card-flyer">
+                                                                                <div class="text-box">
+                                                                                    <div class="image-box">
+                                                                                        <img src="./images/vidyaLakshmii.jpeg" alt="">
+                                                                                    </div>
+                                                                                    <div class="text-container">
+                                                                                        <h6>Database Management System</h6>
+                                                                                        <p style="margin-bottom: 30px;">Palisetty vidyaLakshmi</p>
+                                                                                        <p style="margin-bottom: 30px; font-style: italic; font-family: volkhov;">Database management systems are essential for businesses  they offer an efficient way of handling large amounts and multiple types of data. The ability to access data efficiently allows companies to make informed decisions quicker.</p>
+                                                                                        <b style="float: left; margin-bottom: 10px;">
+                                                                                            <i class="fas fa-eye" style="color: gold;"></i>1,903 views</b>
+                                                                                            <b style="width: 20px; margin-bottom: 10px; color: rgb(12, 195, 250); float: right; margin-right: 10px;">Free</b>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                                            <a href="#/flat">
+                                                                                <div class="card-flyer">
+                                                                                    <div class="text-box">
+                                                                                        <div class="image-box">
+                                                                                            <img src="./images/samuelSusann.jpeg" alt="">
+                                                                                        </div>
+                                                                                        <div class="text-container">
+                                                                                            <h6>Formal Language &amp; Automata Theory</h6>
+                                                                                            <p style="margin-bottom: 30px;">Samuel Susan</p>
+                                                                                            <p style="margin-bottom: 30px; font-style: italic; font-family: volkhov;">The major objective of automata theory is to develop methods by which computer scientists can describe and analyze the dynamic behavior of discrete systems, in which signals are sampled periodically and dynamically.</p>
+                                                                                            <b style="float: left; margin-bottom: 10px;"><i class="fas fa-eye" style="color: gold;"></i>1,184 views</b>
+                                                                                            <b style="width: 20px; margin-bottom: 10px; color: rgb(12, 195, 250); float: right; margin-right: 10px;">Free</b>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                                            <a href="#/dld">
+                                                                                <div class="card-flyer">
+                                                                                    <div class="text-box">
+                                                                                        <div class="image-box">
+                                                                                            <img src="./images/sohanaa.jpeg" alt="">
+                                                                                        </div><div class="text-container">
+                                                                                            <h6>Digital Logic Design</h6>
+                                                                                            <p style="margin-bottom: 43px; margin-top: 20px;">Sohana</p>
+                                                                                            <p style="margin-bottom: 30px; font-style: italic; font-family: volkhov;">Digital logic is fundamental in creating electronic devices. It is used to create circuits and logic gates, as well as to check computer chips and also number systems ,boolean algebra and combinational logic design circuit.</p>
+                                                                                            <b style="float: left; margin-bottom: 10px;"><i class="fas fa-eye" style="color: gold;"></i>1,000 views</b>
+                                                                                            <b style="width: 20px; margin-bottom: 10px; color: rgb(12, 195, 250); float: right; margin-right: 10px;">Free</b>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                                            <div class="col-xs-12-col-sm-6-col-md-3-col-lg-3">
+                                                                                <a href="#/oop">
+                                                                                    <div class="card-flyer">
+                                                                                        <div class="text-box">
+                                                                                            <div class="image-box">
+                                                                                                <img src="./images/karthikk.jpg" alt="">
+                                                                                            </div>
+                                                                                            <div class="text-container">
+                                                                                                <h6>Object Oriented Programming</h6>
+                                                                                                <p style="margin-bottom: 30px;">Karun Karthik</p>
+                                                                                                <p style="margin-bottom: 30px; font-style: italic; font-family: volkhov;">C++ is one of the most widely-used programming languages in game development. It has been used to create: games, such as World of Warcraft,  game engines like Unreal Engine,and gaming consoles, including Xbox .</p>
+                                                                                                <b style="float: left; margin-bottom: 10px;"><i class="fas fa-eye" style="color: gold;"></i>1,500 views</b>
+                                                                                                <b style="width: 20px; margin-bottom: 10px; color: rgb(12, 195, 250); float: right; margin-right: 10px;">Free</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="button-container">
+                                                                <a href="page1.html" class="button">View All Courses</a>
+                                                              </div>
+
+                                                            
+                                                        </div>
+                                                       <div>
+                                                      <!--  <a href="#/tutions">
+                                                            <img class="d-block w-100 " id="img1" src="./images/tution-1230_400.png">
+                                                            <img class="d-block w-100 " id="img2" src="./images/tution- 360_456.jpg">
+                                                            </a>
+        </div>-->
+        <h1 style="text-align: center; color: black; margin: 0% 0% 20px;font-family:'Times New Roman', Times, serif;"></h1>
+        <div id="image-container" class="imgcont">
+          <a href="#tutions"><img src="./images/tution- 360_456.jpg" alt="Mobile Image" class="mobile-image" usemap="#your-map"></a> 
+           
+            
+        
+          <map name="your-map">
+                <area shape="rect" coords="104,196,267,237" href="https://www.youtube.com/">
+                <area shape="rect" coords="107,251,275,294" href="http://www.example.com">
+              
+          </map>
+          <a href="#tutions">  <img src="./images/tution-1230_400.png" alt="Desktop Image" class="desktop-image" usemap="#your-map2"></a> 
+           <map name="your-map2">
+                <area shape="rect" coords="420,393,627,568" href="https://www.youtube.com/">
+                <area shape="rect" cooxrds="622,277,841,332" href="http://www.example.com">
+              
+              </map>
+            
+            
+         <!--  <div align="center">
+                <a href="page1.html" class="button">Book Demo Class</a>
+                <a href="page2.html" class="button">Become Instructor</a>
+               
+           </div>-->
+              
+
+          </div>
+          
+
+        <div class="mt-4 latest_events" style="padding-top: 5px;">
+            <h1 class="latest_events_head pl-4 mb-0">Latest Events</h1>
+            <marquee scrollamount="15" onmouseover="this.stop()" onmouseout="this.start()">
+                <a href="https://www.youtube.com/watch?v=dG4MnKt-XIg"> 
+                <div type="button" class="modal_section sec1 ">
+                    <i class="fas fa-play sub_icon"></i>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=pmN6-rChfjk">
+                <div type="button" class="modal_section sec2">
+                    <i class="fas fa-play sub_icon"></i>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=vf0bFM2FzBQ">
+                <div type="button" class="modal_section sec3">
+                    <i class="fas fa-play sub_icon"></i>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=oYSKu6BZ9BY">
+                                                                <div type="button" class="modal_section sec4">
+                                                                    <i class="fas fa-play sub_icon"></i>
+                                                                </div></marquee>
+                                                            </a>
+                                                            <div class="modal fade" id="staticBackdrop1">
+                                                                <a href="#/dbms">
+                                                                    <div class="modal-dialog ">
+                                                                        <a href="#/dbms">
+                                            
+                                                                        </a><div class="modal-content sub_modal">
+                                                                            <div class="modal-header">
+                                                                                <a href="https://www.youtube.com/watch?v=dG4MnKt-XIg"></a>
+                                                                                <h4 class="modal-title modal_title">Crack Job At TCS</h4>
+                                                                                <a href="#/dbms"></a>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                            
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                                    <script src="./card.js"></script>
+                                                                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+                                                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                                                                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+                                                                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
+                                                                    </script>
+                                                                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+                                                                    </script>
+                                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+                                                                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+                                                                   <div>
+                                                                    <div class="foot">
+                                                                        <div class="rows">
+                                                                          <div class="cols">
+                                                                              <!--<img src="EDumoonwhite logo.jpg" alt="logo" width = "150" height="90" > -->
+                                                                              <div class="logo">
+                                                                                  <a href="#" target="_self"><img src="edumoon-removebg-preview.png" alt="EDUMOON logo" height="127" width = "180" ></a>
+                                                                              </div> <br/>
+                                                                              <p style="font-size: 18px; color: white;">EduMoon is Building Largest Student Community for Engineers for to develop new skills, networking,Find internships, Grow and Earn. </p>
+                                                                              <br>
+                                                                              <div class="social_media">
+                                                                                  <a href="https://www.instagram.com/theedumoon/?hl=en" target="_blank">
+                                                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                                                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                                                                      </svg>
+                                                                                  </a>
+                                                                                  <a href="https://www.facebook.com" target="_blank">
+                                                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                                                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                                                                      </svg>
+                                                                                  </a>
+                                                                                  <a href="https://web.whatsapp.com" target="_blank">
+                                                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                                                                          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                                                                      </svg>
+                                                                                  </a>
+                                                                                  
+                                                                                  
+                                                                                   <a href="https://twitter.com/theedumoon?lang=en" target="_blank">
+                                                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                                                          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                                                                      </svg>
+                                                                                  </a>
+                                                                                  
+                                                                              </div>
+                                                                          </div>
+                                                                          
+                                                                          <div class="cols">
+                                                                              <ul style="list-style: none">
+                                                                                <li class="footer-company"><a class="footer-link" href="#"><h4 style="color: white;">COMPANY</h4></a></li>
+                                                                                <li class="footer-company"><a class="footer-link" href="#"><h4 style="color: white;">About Us</h4></a></li>
+                                                                                <li class="footer-company"><a class="footer-link" href="#"><h4 style="color: white;">Privacy Policy</h4></a></li>
+                                                                                <li class="footer-company"><a class="footer-link" href="#"><h4 style="color: white;">Terms and conditions</h4></a></li>
+                                                                              </ul>
+                                                                          </div>    
+                                                                      
+                                                                          <div class="cols">
+                                                                                <ul style="list-style: none">
+                                                                                  <li class="footer-nav"><a class="footer-link" href="#"><h4 style="color: white;">HOME</h4></a></li>
+                                                                                  <li class="footer-nav"><a class="footer-link" href="#"><h4 style="color: white;">EVENTS</h4></a></li>
+                                                                                  <li class="footer-nav"><a class="footer-link" href="#"><h4 style="color: white;">CLUBS</h4></a></li>
+                                                                                  <li class="app"><h4 style="color: white;">APPS</h4></li>
+                                                                                  <li><div class="apps_icons">
+                                                                                   <a href="https://play.google.com/store/apps/details?id=com.edumoon.learners&hl=en&gl=US" target="_blank">
+                                                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-google-play" viewBox="0 0 16 16">
+                                                                                          <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+                                                                                      </svg>
+                                                                                   </a>
+                                                                                   <a href="https://www.apple.com/app-store" target="_blank">
+                                                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-apple" viewBox="0 0 16 16">
+                                                                                          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                                                                                          <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                                                                                        </svg>
+                                                                                    </a>
+                                                                                  </div></li>
+                                                                                </ul>  
+                                                                          </div>
+                                                                          <div class="cols">
+                                                                              <p class="address">
+                                                                                  <p style="font-size: 1.17em;
+                                                                                  margin-top: 1em;
+                                                                                  margin-bottom: 1em;
+                                                                                  margin-left: 0;
+                                                                                  margin-right: 0;
+                                                                                  font-weight: bold; font-size: larger; color:white">Contact Us:</p>
+                                                                                  <p style="font-size: 18px;color: white;">A-Hub</p>
+                                                                                  <p style="font-size: 18px;color: white;"> Maddilapalem,Visakhapatnam- 530003</p>
+                                                                                 <p class="email-id" style="font-size: 18px;color: white;"><h4 style="color:white">Email-id:</h4>theedumoon@gmail.com</p><br>
+                                                                                 <h4 style="font-size: 18px;color: white;">+91 - 798913224</h4>
+                                                                              </p>
+                                                                          </div>
+                                                                      
+                                                                         
+                                                                      </div>
+                                                                       </div>
+
+                                                                    </div>
+                                                                    </body>
+                                                                    </html>
