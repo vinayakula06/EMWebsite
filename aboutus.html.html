@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .Main-container {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+
+        .founder-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            margin-bottom: 40px;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #cccccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+        }
+
+        .text {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 576px) {
+            .Main-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .founder-container {
+                width: 100%;
+                flex-direction: column;
+            }
+        }
+
+
+        .box {
+            /* background-color: whitesmoke; */
+            /* border: 1px solid black; */
+            padding: 0px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .box img {
+            margin: 10px;
+            /* padding: 10px; */
+            margin-top: 10px;
+            border: rgb(25, 25, 26);
+            border-radius: 5px;
+            cursor: pointer;
+            width: 120px;
+            height: 120px;
+        }
+
+        /* 
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgb(41, 10, 158), 0 0 10px rgb(41, 66, 255), 0 0 15px rgb(42, 98, 158);
+            cursor: pointer;
+        } */
+
+        .boxbox {
+            padding: 0px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .boxbox img {
+            /* margin: 5px; */
+            margin-top: 10px;
+            /* border: rgb(25, 25, 26); */
+            padding-right: 1rem;
+            /* border-radius: px; */
+            cursor: pointer;
+            width: 150px;
+            height: 150px;
+        }
+
+        /* img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgb(41, 10, 158), 0 0 10px rgb(41, 66, 255), 0 0 15px rgb(42, 98, 158);
+            cursor: pointer;
+        } */
+
+        .image-container {
+            padding-top: 2rem;
+            padding-left: 11rem;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            align-items: flex-start;
+        }
+
+        .image-container img {
+            width: 250px;
+            height: 200px;
+            margin-right: 20px;
+        }
+
+        .image-container .image-text {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            white-space: wrap;
+        }
+
+        @media screen and (max-width: 500px) {
+            .image-container {
+                padding-left: 3rem;
+            }
+        }
+
+        .y {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            display: flex;
+
+            white-space: nowrap;
+        }
+
+        .x {
+            height: 100vh;
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding: 0%;
+        }
+
+        .lb {
+            font-size: x-small;
+        }
+
+        .yy {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            display: flex;
+            white-space: nowrap;
+        }
+
+        .xx {
+            height: 100vh;
+            border: 1px solid black;
+            width: 150px;
+            height: 200px;
+            margin: auto;
+            /* border-radius: 50%; */
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding: 0%;
+        }
+
+        .lbb {
+            font-size: x-small;
+        }
+
+        .xxx {
+            height: 100vh;
+            /* border: 1px solid black; */
+            width: 250px;
+            height: 250px;
+            margin: auto;
+            /* border-radius: 50%; */
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding: 0%;
+        }
+
+        .image-container1 {
+            padding-top: 2rem;
+            padding-left: 11rem;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            align-items: flex-start;
+        }
+
+        .image-container1 img {
+            width: 250px;
+            height: 200px;
+            margin-right: 20px;
+        }
+
+        .image-container1 .image-text {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            white-space: wrap;
+            font-size: 0.6rem;
+        }
+
+        .image-container1 .image-text1 {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            white-space: wrap;
+            font-size: 0.9rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            .image-container1 {
+                padding-left: 3rem;
+            }
+        }
+
+        .articles>.card {
+            width: 80%;
+            flex-direction: row;
+            margin: 15px auto;
+            align-items: center;
+            height: 20rem;
+
+        }
+
+        .articles>.card>img {
+            width: 220px;
+            object-fit: contain;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .articles>.card {
+                flex-direction: column;
+                height: fit-content;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .articles>.card>img {
+                width: 200px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1 style="font-size: 40px; text-align: center; padding-top: 2rem;">About Us</h1>
+    <p style="font-size:20px; text-align: center;">EduMoon is an Ed-Tech Startup for college students,We are developing
+        Largest Engineering Student Community
+        providing educational and skill-based learning and career guidance platform
+        with a community base of 15000+ students,by delivering an extensive range of courses, internships,
+        and webinars through our well accomplished & sophisticated subject experts and teaching professionals</p>
+
+
+    <br>
+    <br></br>
+    <h1>MEET OUR FOUNDERS</h1>
+    <div class="Main-container">
+        <div class="founder-container">
+            <div class="circle">
+                <img src="https://rameshys.s3.eu-north-1.amazonaws.com/img/vikas.jpg" alt="Founder 1">
+            </div>
+            <p class="text"><B>VIKAS KAPUGANTI </B><br> Chief Executive Officer(CEO) </p>
+        </div>
+        <div class="founder-container">
+            <div class="circle">
+                <img src="https://rameshys.s3.eu-north-1.amazonaws.com/img/mahidar.jpg" alt="Founder 2">
+            </div>
+            <p class="text"><b>PONNADA MAHIDHAR</b> <BR> CO-FOUNDER & Chief Marketing Officer(CMO)</p>
+        </div>
+    </div>
+    <br>
+    <h1 style="text-align:center">OUR MENTORS</h1>
+    <div class="y">
+        <figure>
+            <a href="https://www.linkedin.com/in/srinivasa-rao-peri-2ab17925/?originalSubdomain=in">
+                <img src="ment1.jpeg" class="x">
+            </a>
+            <figcaption style="text-align: center;  font-size: 15px; font-weight: bold;">
+                <nbsp> Prof. P. Srinivasa Rao </nbsp>
+                <div class="lb">(Dept. Of CSE)</div>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.linkedin.com/in/paul-douglas-5b8b8219/?originalSubdomain=in">
+                <img src="ment6.jpg" class="x">
+            </a>
+            <figcaption style="text-align: center;  font-size: 15px; font-weight: bold;">Prof. Paul Douglas<div
+                    class="lb">(Dept. Of Chemical Engineering)</div>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="https://www.linkedin.com/in/lalitha-bhaskari-dhavala-4280631/?originalSubdomain=in">
+                <img src="ment2.jpg" class="x">
+            </a>
+            <figcaption style="text-align: center;  font-size: 15px; font-weight: bold;"> Prof. D. Lalitha Bhaskari <div
+                    class="lb">(Chairman - Board Of Studies CSSE)<br>(IQAC Coordinator AU)</div>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.linkedin.com/in/mallikarjuna-rao-pasumarthi-b4322113/?originalSubdomain=in">
+                <img src="ment3.jpeg" class="x">
+            </a>
+            <figcaption style="text-align: center;  font-size: 15px; font-weight: bold;">Prof. P. Mallikarjun Rao<div
+                    class="lb">(HOD - Dept. Of Electrical Engineering, AU)</div>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.linkedin.com/in/eswarapu/?originalSubdomain=in">
+                <img src="ment5.webp" class="x">
+            </a>
+            <figcaption style="text-align: center;  font-size: 15px; font-weight: bold;">Mr. Ravi Eswarapu<div
+                    class="lb">(CEO A-HUB - AU)</div>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.linkedin.com/in/prasad-reddy-98109412/?originalSubdomain=in">
+                <img src="ment4.jpg" class="x">
+            </a>
+            <figcaption style="text-align: center;  font-size: 15px; font-weight: bold;">Prof.P.V.G.D.Prasad Reddy<div
+                    class="lb">(Vice Chancellor - AU)</div>
+            </figcaption>
+        </figure>
+    </div>
+    <br>
+    <h1 style="text-align:center">OUR TEAM</h1>
+    <div class="yy">
+        <figure>
+            <a href="https://www.linkedin.com/in/srinivasa-rao-peri-2ab17925/?originalSubdomain=in">
+                <img src="IMG_1053.JPG" class="xx">
+            </a>
+            <figcaption style="text-align: center;  font-size: 15px; font-weight: bold;">
+                <nbsp>Brijesh</nbsp>
+                <div class="lbb">(Chief Development Officer)</div>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.linkedin.com/in/paul-douglas-5b8b8219/?originalSubdomain=in">
+                <img src="IMG_1052.JPG" class="xx">
+            </a>
+            <figcaption style="text-align: center;  font-size: 15px; font-weight: bold;">Smruthi<div class="lbb">(Chief
+                    Organisation Officer)</div>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="https://www.linkedin.com/in/lalitha-bhaskari-dhavala-4280631/?originalSubdomain=in">
+                <img src="shoukath.JPG" class="xx">
+            </a>
+            <figcaption style="text-align: center;  font-size: 15px; font-weight: bold;">Shoukath<div class="lbb">(Chief
+                    Technological Officer)</div>
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="https://www.linkedin.com/in/mallikarjuna-rao-pasumarthi-b4322113/?originalSubdomain=in">
+                <img src="sowmya.JPG" class="xx">
+            </a>
+            <figcaption style="text-align: center;  font-size: 15px; font-weight: bold;">Sowmya<div class="lbb">(Chief
+                    Event Designer)</div>
+            </figcaption>
+        </figure>
+    </div>
+    <br>
+    <h1 style="text-align: center; padding-top: 2%;">Interactions</h1>
+    <div class="container-fluid">
+        <div class="image-container">
+            <div>
+                <img src="https://rameshys.s3.eu-north-1.amazonaws.com/img/Infosys+Founder-Narayana+Murthy.jpg"
+                    alt="Image 1">
+                <p class="image-text"> MR NARAYANA MURTHY <br>(FOUNDER OF INFOSYS)</p>
+            </div>
+            <div>
+                <img src="https://rameshys.s3.eu-north-1.amazonaws.com/img/Upgrad.jpg" alt="Image 2">
+                <p class="image-text">MAYANK KUMAR <br>(FOUNDER OF UPGRAD)</p>
+            </div>
+            <div>
+                <img src="https://rameshys.s3.eu-north-1.amazonaws.com/img/ITmin.jpg" alt="Image 3">
+                <p class="image-text">MR AMARNATH <br>(IT MINISTER OF AP)</p>
+            </div>
+            <div>
+                <img src="https://rameshys.s3.eu-north-1.amazonaws.com/img/dipansahu.jpg" alt="Image 3">
+                <p class="image-text">DIPAN SAHU<br>(ASST.INNOVATION DIRECTOR<br>MINISTRY OF EDUCATION'S<br>INNOVATION
+                    CELL & AICTE <br> GOVT OF INDIA)</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1 style="text-align:center">OUR EXTENDED FAMILY</h1>
+    <div class="yy">
+        <figure>
+            <a href="#">
+                <img src="pic11.jpg" class="xxx">
+            </a>
+        </figure>
+        <figure>
+            <a href="#">
+                <img src="pic12.jpg" class="xxx">
+            </a>
+        </figure>
+
+        <figure>
+            <a href="#">
+                <img src="pic13.jpg" class="xxx">
+            </a>
+        </figure>
+        <figure>
+            <a href="#">
+                <img src="pic14.webp" class="xxx">
+            </a>
+        </figure>
+    </div>
+    <br>
+    <h1 style="text-align: center; padding-top: 2%;">Colleges Trusted</h1>
+    <div class="box">
+        <figure>
+            <img src="au.png">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">Andhra<br> University
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="san.png">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">Sanketika Vidya<br>
+                Parishad</figcaption>
+        </figure>
+        <figure>
+            <img src="kk.png">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">St.Joseph
+                <br>College<br>for Women
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="ooooo.png">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">Sri Mahathi<br>Vidyaapeeth
+            </figcaption>
+        </figure>
+        <figure><img src="ctk.png">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">Centurion<br>University
+            </figcaption>
+        </figure>
+
+        <figure><img src="bits.png">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">Bits Vizag</figcaption>
+        </figure>
+        </figure>
+        <figure>
+            <img src="ani.jpg">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">ANITS</figcaption>
+        </figure>
+        </figure>
+        <figure>
+            <img src="ch.png">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">Chaitanya
+                <br>Engineering<br>College
+            </figcaption>
+        </figure>
+        </figure>
+        <figure>
+            <img src="py.png">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">
+                Pydah<br>Educational<br>Academy</figcaption>
+        </figure>
+        </figure>
+        <figure>
+            <img src="dr.png">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">Dr.Lankapalli<br>
+                Bullayya<br>College</figcaption>
+        </figure>
+        </figure>
+        <figure>
+            <img src="https://www.gitam.edu/sites/default/files/2022-09/GITAM-logo.jpg">
+            <figcaption style="text-align: center;  font-size: 20px; font-weight: bold;">Gitam
+                <br>University
+            </figcaption>
+        </figure>
+    </div>
+    <br>
+    <h1 style="text-align: center; padding-top: 2%;">Achivements</h1>
+    <div class="container-fluid">
+        <div class="image-container1">
+            <div>
+                <p class="image-text1">Selected under NIGS by Startupindia</p>
+                <img src="chunauti (1).jpg" alt="Image 1">
+                <p class="image-text">Completed and gotselected for<br>CHUNAUTI2.0 Challenge conducted by STPI<br>,INDIA
+                    under NGIS by STARTUP INDIA <br>among 2300+ Registered start-ups</p>
+            </div>
+            <div>
+                <p class="image-text1">Top 3 at A-HUB</p>
+                <img src="Pitch and Win (1).jpg" alt="Image 2">
+                <p class="image-text">Selected as Top 3 Startups at A-HUB and <br>Andhra Pradesh InnovationSociety Pitch
+                    and Win </p>
+            </div>
+            <div>
+                <p class="image-text1">Top 10 at AU</p>
+                <img src="State Conclave (1).jpg" alt="Image 3">
+                <p class="image-text">Selected as Top 10 Startup <br>at Andhra Pradesh State Conclave</p>
+            </div>
+            <div>
+                <p class="image-text1">Top 90 Globally</p>
+                <img src="tie 2022 (1).jpg" alt="Image 3">
+                <p class="image-text">Selected as Top 3 Startups in Andhra Pradesh <br>and Top 90 Startups Globally in
+                    TiE 2022.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h1 style="text-align: center; padding-top: 2%;">Trusted By</h1>
+    <div class="boxbox">
+        <figure>
+            <a href="https://www.andhrauniversity.edu.in/">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJsJbii7LVoM8uQqy1xMyUz0o-yqF_sH4jdKcp6i8v2zAqoqQ8">
+        </figure></a>
+        <figure>
+            <a href="https://www.stpl.biz/index">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe7nNuF3kl92dO_VLryVbO6hyfsNHT-nfJ1NM-5RwGi41t7abm">
+        </figure></a>
+        <figure>
+            <a href="https://msme.gov.in/">
+                <img
+                    src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_b7S9YaV7xLg6Qmjgn_Zm6QlxdDH6xT6m7bdeRmdWgzuktZ1l">
+        </figure></a>
+        <figure>
+            <a href="https://www.iso.org/home.html">
+                <img
+                    src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS23SzDkHt-AbaSfrUz9R0_iKyOq5v7l53hgdBBS3XFtbSM6AQW">
+        </figure></a>
+        <figure><a href="https://www.softwarehubinc.com/">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsnDmhJqOu4ZtfIo9PjZxJ12gXoBSGQVvWuxAlede7uhXCW1-O">
+        </figure></a>
+        <figure><a href="https://www.startupindia.gov.in/">
+                <img
+                    src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQXm1AqWQEOLXXwSrAxVeatLr9gn48o0n1PaGDL6akLMtgnPEF">
+        </figure></a>
+        <figure><a href="https://www.pantaq.com/">
+                <img src="https://t3.gstatic.com/images?q=tbn:ANd9GcQO1ZX6i2hH9F_aHXrxs6BVXlVOppJATAZUj8E_OTM3lESpfRbk">
+        </figure> </a>
+        <figure><a href="https://www.aicte-india.org/">
+                <img
+                    src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA9HRlwoO_lVvpr2fsREiAYS_kGMM8ioNHXGG2QqARvJx74J1y">
+        </figure>
+        </figure></a>
+    </div>
+    <br><br><br>
+    <div class="articles flex-row">
+        <div class="card">
+            <img class="card-img-top" src="timesofindia.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Odit eius asperiores
+                    quisquam, praesentium quia maxime earum dolorum, blanditiis aliquam dignissimos nisi voluptates
+                    voluptatum obcaecati esse laborum! Fugiat placeat dolore dolorum perspiciatis, voluptatum ad!
+                    Maiores consequuntur tempora quis quisquam illo cupiditate fugit, commodi reiciendis amet nobis at
+                    sapiente cum vitae optio veritatis quam iure voluptas beatae saepe libero quibusdam enim. Maiores
+                    dolorum cum sequi iure obcaecati praesentium mollitia, in sapiente eum laboriosam eius atque rerum
+                    laborum et ex autem ipsum earum?</p>
+                <a href="https://www.thehindu.com/news/cities/Visakhapatnam/visakhapatnam-startup-from-andhra-university-selected-for-tie-university-global-pitch-competition/article65312064.ece"
+                    class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="andhrajyothi.jpg" alt="Card image cap" style="width:300px; margin:auto">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Odit eius asperiores
+                    quisquam, praesentium quia maxime earum dolorum, blanditiis aliquam dignissimos nisi voluptates
+                    voluptatum obcaecati esse laborum! Fugiat placeat dolore dolorum perspiciatis, voluptatum ad!
+                    Maiores consequuntur tempora quis quisquam illo cupiditate fugit, commodi reiciendis amet nobis at
+                    sapiente cum vitae optio veritatis quam iure voluptas beatae saepe libero quibusdam enim. Maiores
+                    dolorum cum sequi iure obcaecati praesentium mollitia, in sapiente eum laboriosam eius atque rerum
+                    laborum et ex autem ipsum earum?</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="the hindu.png" alt="Card image cap" style="width:300px; margin:auto">
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Odit eius asperiores
+                    quisquam, praesentium quia maxime earum dolorum, blanditiis aliquam dignissimos nisi voluptates
+                    voluptatum obcaecati esse laborum! Fugiat placeat dolore dolorum perspiciatis, voluptatum ad!
+                    Maiores consequuntur tempora quis quisquam illo cupiditate fugit, commodi reiciendis amet nobis at
+                    sapiente cum vitae optio veritatis quam iure voluptas beatae saepe libero quibusdam enim. Maiores
+                    dolorum cum sequi iure obcaecati praesentium mollitia, in sapiente eum laboriosam eius atque rerum
+                    laborum et ex autem ipsum earum?</p>
+                <a href="https://news.hellovizag.in/ed-tech-startup-by-au-students-valued-at-3-crores"
+                    class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
