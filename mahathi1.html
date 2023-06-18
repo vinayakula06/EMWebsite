@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <title>Corousel</title>
@@ -1276,6 +1275,51 @@
 
 
 
+    .im img{
+    width: 40%;
+    height: 30%;
+  }
+  figcaption{
+    font-weight: bolder;
+    font-size: 2.5rem;
+  }
+.row img:hover{
+        transform:translateZ(0px);
+      }
+.icons{
+  margin-top: 90px;
+ position: relative;
+}
+@media screen and (max-width:1200px)
+{
+  .icons{
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width:1100px)
+{
+  .row img{
+    width: 70%;
+    height: 40%;
+  }
+  .icons{
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width:770px)
+{
+  .row img{
+    width: 60%;
+    height: 30%;
+  }
+  .icons{
+    margin-top: 20px;
+  }
+}
+
+
+   
+
 
 
      </style>
@@ -1301,12 +1345,28 @@
         </figure>
       </div> -->
 
-      <div class="icons" align="center">
-        <h1 align="center">Join now</h1>
-        <a href="https://chat.whatsapp.com/BEQtT3Ud2uM32F0ZK8WFv4" ><i class="fa-brands fa-whatsapp fa-border fa-3x" style="background-color: #43d854;color:white"></i></a>&nbsp;&nbsp;&nbsp;
-           <a href="https://discord.gg/2kA86Q8CnU"><i class="fa-brands fa-discord fa-border fa-3x" style="background-color: #1769ff;color:white"></i></a>&nbsp;&nbsp;&nbsp;
-            <a href="HomeTeam2.html"><i class="fa-brands fa-google fa-border fa-3x" style="background-color: #dc4e41;color:white"></i></a>
+      
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="im" align="center">
+            <figure style="margin: 20px;">
+              <img src="https://rameshys.s3.eu-north-1.amazonaws.com/img/295958041_1102459847363037_8619545179107659200_n.jpg" alt="stj" class="responsive">
+              <figcaption>Principal</figcaption>
+            </figure>
+          </div>
+        </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="icons" align="center" style="border-style: solid;border-radius:5%; border-color: black; padding: 30px;">
+              <h1 align="center">Join now</h1>
+              <i class="fa-brands fa-whatsapp fa-border fa-3x" style="background-color: #43d854;color:white"></i>&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-discord fa-border fa-3x" style="background-color: #1769ff;color:white"></i>&nbsp;&nbsp;&nbsp;
+            <i class="fa-brands fa-google fa-border fa-3x" style="background-color: #dc4e41;color:white"></i>
+            </div>
+        </div>
       </div>
+
+
+    
        <h1 style="text-align: center; margin-top: 40px;">President</h1>
       <img src="president.jpg" class="president">
       <br>
