@@ -301,24 +301,30 @@ body::-webkit-scrollbar {
 
 /* Testimonials Section */
 .testimonials {
-    padding: 40px 0;
+    padding: 20px 0;
     color: black;
     text-align: center;
 }
 
 .border {
-    width: 160px;
+    width: 100px; /* Make the border shorter for smaller screens */
     height: 5px;
+    margin: 20px auto; /* Adjust margin for smaller screens */
     background: #6ab04c;
-    margin: 26px auto;
+    
 }
 
 /* Testimonial Card */
-.testimonial-card .card-up {
-    height: 120px;
-    overflow: hidden;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+.testimonial-card {
+    background: #2749c4;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2749c4', endColorstr='#6085b2',GradientType=1 );
+    color: #fff;
+    margin: 10px;
+    margin-bottom: 30px; /* Increase margin for smaller screens */
+    width: 100%; /* Make the card full width for smaller screens */
+    padding: 20px; /* Increase padding for smaller screens */
+    line-height: 20px;
+    transition: all .2s ease-in-out;
 }
 
 .testimonial-card .avatar {
@@ -834,23 +840,24 @@ img:hover {
         }
 
         .testimonial>svg {
-            width: 300px;
-            height: 300px;
-            flex-grow: 1;
-            border-radius: 50%;
-            margin-top: -110px;
+            width: 100%;
+    max-width: 200px; /* Adjust max-width for smaller screens */
+    height: auto;
+    flex-grow: 1;
+    border-radius: 50%;
+    margin-top: -90px; /* Adjust margin for smaller screens */
         }
 
         .testimonial>p {
-            margin-top: 21px;
+            margin-top: 15px;
         }
 
-        .name {
-            font-size: 20px;
-            text-transform: uppercase;
-            margin: 20px 0;
-            margin-top: -1px;
-        }
+            .name {
+        font-size: 18px; /* Decrease font size for smaller screens */
+        text-transform: uppercase;
+        margin: 10px 0;
+        margin-top: -1px;
+    }
         .testimonial:hover {
         transform: scale(1.02);
         }
@@ -1037,6 +1044,7 @@ img:hover {
                 text-decoration: none;
                 font-weight: 500;
                 transition: color 0.3s ease-in-out;
+                font-size: 1.2rem;
             }
             
             .navbar1 a:hover{
@@ -1107,18 +1115,18 @@ img:hover {
                 }
             
                 .navbar1 .menu1-items{
-                    padding-top: 100px;
-                    background: #fff;
-                    height: 100vh;
-                    max-width: 300px;
-                    transform: translate(-150%);
-                    display: flex;
-                    flex-direction: column;
-                    margin-left: -40px;
-                    padding-left: 40px;
-                    transition: transform 0.5s ease-in-out;
-                    box-shadow:  5px 0px 10px 0px #aaa;
-                    overflow: scroll;
+                    padding-top: 80px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+        overflow: scroll;
                 }
             
                 .navbar1 .menu1-items li{
